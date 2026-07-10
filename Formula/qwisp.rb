@@ -13,7 +13,9 @@ class Qwisp < Formula
   # the SwiftPM resource bundles it loads at runtime (MLX's default.metallib, etc.).
   def install
     libexec.install Dir["*"]
-    bin.install_symlink libexec/"qwisp"
+    # exec wrapper (NOT a symlink): argv0 must be the real libexec path so MLX finds
+    # mlx-swift_Cmlx.bundle/…/default.metallib colocated with the executable.
+    bin.write_exec_script libexec/"qwisp"
   end
 
   service do
