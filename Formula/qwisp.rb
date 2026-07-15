@@ -1,10 +1,10 @@
 class Qwisp < Formula
   desc "Fast, optionally-lossless local inference for Qwen3.6-35B-A3B (MoE) on Apple Silicon"
   homepage "https://github.com/penta2himajin/qwisp"
-  url "https://github.com/penta2himajin/qwisp/releases/download/v0.3.5/qwisp-v0.3.5-macos-arm64.tar.gz"
-  sha256 "38aaf341acbcb050445d112ef683c1fd1e739136826407dd100d5518366f4e43"
+  url "https://github.com/penta2himajin/qwisp/releases/download/v0.3.6/qwisp-v0.3.6-macos-arm64.tar.gz"
+  sha256 "02c76a91635b036ba5fbd6f602e7c50f7db8fa6c9e336f509b20064e0af79e3f"
   license "Apache-2.0"
-  version "0.3.5"
+  version "0.3.6"
 
   depends_on arch: :arm64
   depends_on macos: :sonoma
